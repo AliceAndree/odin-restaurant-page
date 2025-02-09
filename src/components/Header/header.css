@@ -1,9 +1,19 @@
+#header-background {
+  position: fixed;
+  width: 100svw;
+  height: 150px;
+  background-color: var(--background);
+  z-index: -2;
+}
 header {
+  width: 100svw;
   height: 150px;
   padding: 0 120px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  position: fixed;
+  z-index: 999;
 }
 
 #header-block {
@@ -15,6 +25,7 @@ header {
 
 #small-logo {
   height: 90px;
+  cursor: pointer;
 }
 
 nav {
@@ -28,5 +39,31 @@ nav {
     font-weight: 800;
     color: var(--dark-blue);
     font-size: 0.9rem;
+
+    &::after {
+      margin: auto;
+      width: 0;
+      background: transparent;
+      transition: width 0.5s ease, background-color 0.5s ease;
+    }
   }
+}
+
+nav button::after,
+#header-background::after {
+  content: "";
+  display: block;
+  height: 3px;
+}
+
+#header-background::after {
+  margin: 150px auto 0;
+  width: var(--header-bottom);
+  background: var(--header-bottom-color);
+  transition: width 1.5s ease, background-color 1.5s ease;
+}
+
+nav button:hover::after {
+  width: 100%;
+  background: var(--dark-blue);
 }
