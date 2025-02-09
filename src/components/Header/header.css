@@ -34,14 +34,33 @@ nav {
   gap: 10px;
 
   button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: "Nunito Sans", serif;
     text-transform: uppercase;
     font-weight: 800;
     color: var(--dark-blue);
     font-size: 0.9rem;
 
+    &:last-child {
+      border: 2px solid var(--dark-blue);
+      padding: 12px 22px 10px 22px;
+      background-color: transparent;
+      transition: background-color 0.5s ease;
+
+      &:hover::after {
+        width: 0;
+      }
+
+      &:hover {
+        background-color: var(--yellow);
+        transition: background-color 1s ease;
+      }
+    }
+
     &::after {
-      margin: auto;
+      margin: 0 auto;
       width: 0;
       background: transparent;
       transition: width 0.5s ease, background-color 0.5s ease;
