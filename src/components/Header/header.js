@@ -30,7 +30,6 @@ const createHeader = () => {
   header.appendChild(headerBlock);
 
   document.addEventListener("scroll", () => {
-    console.log(window.scrollY);
     if (window.scrollY !== 0) {
       headerBackground.style.setProperty("--header-bottom", "100%");
       headerBackground.style.setProperty(
