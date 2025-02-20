@@ -32,11 +32,11 @@ const createMenuSection = () => {
   menuPresentation.appendChild(menuParagraph);
 
   menuSection.appendChild(menuPresentation);
-  menuButton.style.left = `${menuPresentation.offsetWidth + 230}px `;
+  menuButton.style.left = `${menuPresentation.offsetWidth + 130}px `;
   menuSection.appendChild(menuButton);
 
   window.addEventListener("resize", () => {
-    menuButton.style.left = `${menuPresentation.offsetWidth + 230}px `;
+    menuButton.style.left = `${menuPresentation.offsetWidth + 130}px `;
   });
 
   document.addEventListener("scroll", () => {

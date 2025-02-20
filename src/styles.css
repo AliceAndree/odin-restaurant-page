@@ -18,6 +18,7 @@
 :root {
   --background: rgb(245, 243, 236);
   --dark-blue: rgb(28, 44, 89);
+  --blue-green: rgb(135, 173, 171);
   --yellow: rgb(247, 185, 78);
 }
 
@@ -52,4 +53,5 @@ button {
 
 #content {
   position: relative;
+  padding: 0 100px;
 }
