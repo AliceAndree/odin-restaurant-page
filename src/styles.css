@@ -3,6 +3,18 @@
 @import "./components/Home/home.css";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
+@font-face {
+  font-family: Bicyclette;
+  font-weight: bold;
+  src: url("../src/fonts/Bicyclette-Bold.ttf");
+}
+
+@font-face {
+  font-family: Righteous;
+  font-weight: bold;
+  src: url("../src/fonts/Righteous-Regular.ttf");
+}
+
 :root {
   --background: rgb(245, 243, 236);
   --dark-blue: rgb(28, 44, 89);
@@ -12,6 +24,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

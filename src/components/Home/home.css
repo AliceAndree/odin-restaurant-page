@@ -1,8 +1,4 @@
-@font-face {
-  font-family: Bicyclette;
-  font-weight: bold;
-  src: url("../../fonts/Bicyclette-Bold.ttf");
-}
+/* Hero Section */
 
 #hero-section {
   position: relative;
@@ -65,5 +61,68 @@ ul {
 
   100% {
     transform: translatey(0px);
+  }
+}
+
+/* Menu Section */
+
+#menu-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(570px, 1fr));
+  gap: 30px;
+  padding: 0 100px;
+
+  button {
+    position: absolute;
+    top: 83%;
+    font-family: "Nunito Sans", serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--dark-blue);
+    font-size: 0.9rem;
+    border: 2px solid var(--dark-blue);
+    padding: 12px 22px 10px 22px;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--yellow);
+      transition: background-color 1s ease;
+    }
+  }
+}
+
+#menu-image {
+  height: 750px;
+  background-image: var(--burger-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+#menu-presentation {
+  height: 750px;
+  border: 30px solid transparent;
+  border-image: var(--menu-border) 200 stretch;
+  border-image-outset: 1px;
+  padding: 70px;
+  z-index: -100;
+
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: Bicyclette;
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+  }
+
+  p {
+    font-family: "Nunito Sans", serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: var(--dark-blue);
+    margin: 20px 0;
   }
 }
