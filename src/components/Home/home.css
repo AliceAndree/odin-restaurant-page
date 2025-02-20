@@ -176,10 +176,74 @@ ul {
     color: var(--dark-blue);
     font-size: 1.3rem;
     padding: 0 90px;
+    z-index: -100;
   }
 }
 
 #cta-list {
   display: flex;
   gap: 100px;
+}
+
+/* Happenings Section */
+
+#happenings-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(570px, 1fr));
+  gap: 30px;
+
+  button {
+    position: absolute;
+    top: 80%;
+    text-wrap: nowrap;
+    font-family: "Nunito Sans", serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--dark-blue);
+    font-size: 0.9rem;
+    border: 2px solid var(--dark-blue);
+    padding: 12px 22px 10px 22px;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--yellow);
+      transition: background-color 1s ease;
+    }
+  }
+}
+
+#happenings-image {
+  height: 830px;
+  background-image: var(--building-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
+
+#happenings-presentation {
+  height: 830px;
+  border: 30px solid transparent;
+  border-image: var(--menu-border) 200 stretch;
+  border-image-outset: 1px;
+  padding: 70px;
+  z-index: -100;
+
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: Bicyclette;
+    letter-spacing: 2px;
+    color: var(--dark-blue);
+  }
+
+  p {
+    font-family: "Nunito Sans", serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: var(--dark-blue);
+    margin: 20px 0;
+  }
 }

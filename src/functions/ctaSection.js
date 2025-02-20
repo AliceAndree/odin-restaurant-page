@@ -24,6 +24,15 @@ const creatCtaSection = () => {
                             perfectly paired with our signature mimosas and local coffee.`;
 
   ctaSection.appendChild(ctaParagraph);
+
+  document.addEventListener("scroll", () => {
+    console.log(window.scrollY);
+    if (window.scrollY > 1460) {
+      ctaList.style.zIndex = "-100";
+    } else {
+      ctaList.style.zIndex = "100";
+    }
+  });
 };
 
 export default creatCtaSection;

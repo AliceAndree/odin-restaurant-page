@@ -6,7 +6,6 @@ const createMenuSection = () => {
   const menuImage = document.createElement("div");
   const menuPresentation = document.createElement("div");
 
-  menuImage.src = burgerImg;
   menuImage.id = "menu-image";
   menuImage.style.setProperty(`--burger-image`, `url("${burgerImg}")`);
   menuSection.appendChild(menuImage);
