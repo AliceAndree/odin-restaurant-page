@@ -7,11 +7,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  &:nth-of-type(3) {
-    color: transparent;
-    -webkit-text-stroke: 1.2px var(--dark-blue);
-  }
 }
 
 #logo {
@@ -252,6 +247,8 @@ ul {
 
 #banner-section {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding: 50px 0;
 }
@@ -262,5 +259,36 @@ ul {
   background-image: var(--banner-image);
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -100;
+}
+
+#follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+  gap: 20px;
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-blue);
+    font-family: Bicyclette;
+    font-weight: bold;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: transparent;
+    -webkit-text-stroke: 1.2px var(--dark-blue);
+  }
+}
+
+#chevrons {
+  display: flex;
+  gap: 10px;
   z-index: -100;
 }
