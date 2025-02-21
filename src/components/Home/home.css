@@ -160,6 +160,11 @@ ul {
       0 calc(100% - 20px),
       0 20px
     );
+
+    &:hover {
+      background-color: var(--darker-blue);
+      transition: background-color 0.5s ease;
+    }
   }
 
   p {
@@ -250,7 +255,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
+  padding: 50px 0 20px 0;
 }
 
 #banner {
@@ -291,4 +296,21 @@ ul {
   display: flex;
   gap: 10px;
   z-index: -100;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 60px 0;
+}
+
+#socials {
+  display: flex;
+  gap: 10px;
+  img {
+    width: 30px;
+    cursor: pointer;
+  }
 }

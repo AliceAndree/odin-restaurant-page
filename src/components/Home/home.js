@@ -3,6 +3,7 @@ import MenuSection from "../../modules/menuSection";
 import CtaSection from "../../modules/ctaSection";
 import HappeningsSection from "../../modules/happeningsSection";
 import BannerSection from "../../modules/bannerSection";
+import Footer from "../../modules/footer";
 
 const createHomePage = () => {
   HeroSection();
@@ -10,6 +11,7 @@ const createHomePage = () => {
   CtaSection();
   HappeningsSection();
   BannerSection();
+  Footer();
 };
 
 export default createHomePage;
