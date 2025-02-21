@@ -42,6 +42,7 @@ nav {
     font-weight: 800;
     color: var(--dark-blue);
     font-size: 0.9rem;
+    text-wrap: nowrap;
 
     &:last-child {
       border: 2px solid var(--dark-blue);

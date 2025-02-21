@@ -308,7 +308,9 @@ footer {
 
 #socials {
   display: flex;
+  align-items: center;
   gap: 10px;
+  min-width: 70px;
   img {
     width: 30px;
     cursor: pointer;
