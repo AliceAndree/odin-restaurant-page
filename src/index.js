@@ -1,5 +1,5 @@
 import "./styles.css";
-import firstLoad from "./functions/firstLoad";
+import firstLoad from "./modules/firstLoad";
 
 firstLoad();
 

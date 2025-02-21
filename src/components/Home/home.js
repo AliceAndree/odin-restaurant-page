@@ -1,13 +1,15 @@
-import HeroSection from "../../functions/heroSection";
-import MenuSection from "../../functions/menuSection";
-import CtaSection from "../../functions/ctaSection";
-import HappeningsSection from "../../functions/happeningsSection";
+import HeroSection from "../../modules/heroSection";
+import MenuSection from "../../modules/menuSection";
+import CtaSection from "../../modules/ctaSection";
+import HappeningsSection from "../../modules/happeningsSection";
+import BannerSection from "../../modules/bannerSection";
 
 const createHomePage = () => {
   HeroSection();
   MenuSection();
   CtaSection();
   HappeningsSection();
+  BannerSection();
 };
 
 export default createHomePage;
