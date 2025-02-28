@@ -1,4 +1,5 @@
 import smallLogo from "../../assets/small-logo.svg";
+import home from "../../components/Home/home";
 
 const createHeader = () => {
   const header = document.querySelector("header");
@@ -7,18 +8,19 @@ const createHeader = () => {
   const headerLogo = document.createElement("img");
   const nav = document.querySelector("nav");
   const tabs = [
-    "Hours & Location",
-    "Menu",
-    "Our Story",
-    "Happenings",
-    "Private Events",
-    "Order Online",
-    "Reservations",
+    { id: "hours-location", title: "Hours & Location" },
+    { id: "menu", title: "Menu" },
+    { id: "our-story", title: "Our Story" },
+    { id: "happenings", title: "Happenings" },
+    { id: "private-events", title: "Private Events" },
+    { id: "order-online", title: "Order Online" },
+    { id: "reservations", title: "Reservations" },
   ];
 
   for (let i = 0; i < tabs.length; i++) {
     const tab = document.createElement("button");
-    tab.textContent = tabs[i];
+    tab.textContent = tabs[i].title;
+    tab.id = tabs[i].id;
     nav.appendChild(tab);
   }
 

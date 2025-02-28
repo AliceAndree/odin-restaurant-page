@@ -48,6 +48,11 @@ const createHeroSection = () => {
   downArrow.addEventListener("click", () => {
     const menuSection = "#menu-section";
     window.location.href = menuSection;
+    window.addEventListener(
+      "hashchange",
+      () => window.history.pushState({}, "", "/"),
+      {}
+    );
   });
 
   document.addEventListener("scroll", () => {

@@ -1,0 +1,16 @@
+#top-banner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+}
+
+#top-banner {
+  height: 450px;
+  width: 100%;
+  background-image: var(--top-banner-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
