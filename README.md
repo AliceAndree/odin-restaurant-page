@@ -1,6 +1,7 @@
 # The Odin Project - Restaurant Page
 
 ## This is an exercise from [The Odin Project](https://www.theodinproject.com/)'s Fullstack JS Path about Modules & Webpack.
+## For the purpose of the exercise, only the "Hours & Location" page is clickable.
 
 ### Here is my final design for this project (inspired by [The Original's website](https://www.theogdenver.com/) :
 #### (Also check [this link](https://aliceandree.github.io/odin-restaurant-page) for a live version)
