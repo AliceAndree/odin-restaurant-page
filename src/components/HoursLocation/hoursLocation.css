@@ -1,9 +1,10 @@
-#top-banner-section {
+#location-banner-section {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100svh;
+  z-index: -100;
 }
 
 #top-banner {
@@ -13,4 +14,51 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -100;
+}
+
+#hours-location-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-blue);
+    font-family: Bicyclette;
+    font-weight: bold;
+    font-size: 3.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  p {
+    width: 1000px;
+    text-align: center;
+    font-weight: 200;
+    color: var(--dark-blue);
+  }
+}
+
+#adress {
+  text-align: center;
+  color: var(--dark-blue);
+  font-weight: 200;
+  text-decoration: underline;
+  padding: 30px 0;
+}
+
+#hours-title {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  text-align: center;
+  font-weight: 600;
+
+  span {
+    font-weight: 200;
+  }
 }

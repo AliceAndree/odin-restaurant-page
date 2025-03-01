@@ -44,6 +44,8 @@ navButtons.forEach((navButton) => {
         reservations();
         break;
     }
+
+    window.scrollTo(0, 0);
   });
 });
 
@@ -72,8 +74,7 @@ headerLogo.addEventListener("click", () => {
   bannerSection.id = "banner-section";
   content.appendChild(bannerSection);
 
-  const footer = document.createElement("footer");
-  content.appendChild(footer);
-
   home();
+
+  window.scrollTo(0, 0);
 });

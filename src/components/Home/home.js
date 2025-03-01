@@ -11,7 +11,6 @@ const createHomePage = () => {
   CtaSection();
   HappeningsSection();
   BannerSection();
-  Footer();
 };
 
 export default createHomePage;
