@@ -17,13 +17,13 @@ const createHappeningsSection = () => {
   happeningsTitle.textContent = "Happenings";
 
   const happeningsParagraph = document.createElement("p");
-  happeningsParagraph.innerHTML = `Stay tuned to our website and social media for the latest happenings and exclusive events at The OG, 
+  happeningsParagraph.innerHTML = `Stay tuned to our website and social media for the latest happenings and exclusive events at The KT, 
                                 the heart of Denver's dynamic brunch and dining scene. Indulge in our themed brunches, 
                                 relish our monthly specials, and join us in giving back to the community. 
                                 There’s always something new and exciting to look forward to. <br/><br/>
                                 Whether you’re a local foodie or a visitor exploring the wonders of Denver, 
                                 our doors are always open, inviting you to a place where every brunch is not just a meal, 
-                                but an OG experience. <br/><br/> Don’t miss out – book your table today and follow us on Instagram for daily inspirations and surprises!`;
+                                but an KT experience. <br/><br/> Don’t miss out – book your table today and follow us on Instagram for daily inspirations and surprises!`;
 
   const happeningsButton = document.createElement("button");
   happeningsButton.textContent = "View Happenings";

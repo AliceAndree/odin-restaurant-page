@@ -17,7 +17,7 @@ const creatCtaSection = () => {
 
   ctaSection.appendChild(ctaList);
 
-  ctaParagraph.textContent = `Welcome to The OG, nestled in the vibrant heart of McGregor Square, 
+  ctaParagraph.textContent = `Welcome to The KT, nestled in the vibrant heart of McGregor Square, 
                             a stone's throw away from the iconic Coors Field. 
                             As one of Denver's top brunch destinations we're delighted to offer 
                             a unique twist on the classics and innovative dishes, 
@@ -27,10 +27,10 @@ const creatCtaSection = () => {
 
   document.addEventListener("scroll", () => {
     console.log(window.scrollY);
-    if (window.scrollY > 1460) {
-      ctaList.style.zIndex = "-100";
-    } else {
+    if (window.scrollY > 970 && window.scrollY < 1460) {
       ctaList.style.zIndex = "100";
+    } else {
+      ctaList.style.zIndex = "-100";
     }
   });
 };

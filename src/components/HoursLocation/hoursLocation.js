@@ -54,18 +54,18 @@ const createHoursLocation = () => {
   hoursLocationDiv.appendChild(hoursTitle);
 
   locationParagraph.innerHTML = `*(Hours may vary based on Rockies home games / other events)*<br/><br/>
-                                Located in the heart of Denver's bustling McGregor Square, The Original, 
-                                fondly known by locals as "The OG," redefines the brunch experience. 
+                                Located in the heart of Denver's bustling McGregor Square, The Kitchen, 
+                                fondly known by locals as "The KT," redefines the brunch experience. 
                                 Renowned as a premier brunch destination in Denver, 
-                                The OG excels in crafting exquisite breakfast, lunch and brunch dishes. 
+                                The KT excels in crafting exquisite breakfast, lunch and brunch dishes. 
                                 As a celebrated brunch spot near Coors Field,
                                  we pride ourselves on being pioneers in the culinary scene, 
                                  offering an unforgettable dining experience. 
                                  Whether you're seeking the best brunch in Denver, 
                                  a delightful breakfast near Coors Field, 
                                  or a lunch spot that combines innovation with classic flavors, 
-                                 The OG stands as your go-to destination. 
-                                 Join us at The OG, where every dish is a testament to our passion for exceptional brunch experiences.<br/><br/>
+                                 The KT stands as your go-to destination. 
+                                 Join us at The KT, where every dish is a testament to our passion for exceptional brunch experiences.<br/><br/>
                                 Valet parking is also available at The Rally Hotel for $15 on Wazee Street between 19th and 20th.`;
 
   hoursLocationDiv.appendChild(locationParagraph);
