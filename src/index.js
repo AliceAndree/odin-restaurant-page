@@ -9,7 +9,9 @@ import privateEvents from "./components/PrivateEvents/privateEvents";
 import orderOnline from "./components/OrderOnline/orderOnline";
 import reservations from "./components/Reservations/reservations";
 import home from "./components/Home/home";
+import favicon from "./modules/favicon";
 
+favicon();
 firstLoad();
 
 const navButtons = document.querySelector("nav").querySelectorAll("button");
